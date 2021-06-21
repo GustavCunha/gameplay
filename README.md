@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img alt="gameplay" src=".github/Capa.png" width="160px">
+  <img alt="gameplay" src=".github/Capa.png">
 </p>
 
 ## 🔗 Tecnologias
@@ -25,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🔎 Como usar
 
-Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Expo](https://expo.io/), instalado no seu computador. Da sua linha de comando:
+Para clonar e executar este aplicativo, você precisará do [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e [Expo](https://expo.io/), instalado no seu computador. Da sua linha de comando:
 
 ```bash
 # Clone o repositório
