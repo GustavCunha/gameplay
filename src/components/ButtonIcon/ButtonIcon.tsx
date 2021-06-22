@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableOpacityProps } from "react-native";
+import { RectButtonProps } from "react-native-gesture-handler";
 
 import DiscordImg from '../../assets/discord.png';
 import { 
@@ -9,7 +9,7 @@ import {
     LabelButton 
 } from "./ButtonIcon.styles";
 
-type ButtonIconProps = TouchableOpacityProps &{
+type ButtonIconProps = RectButtonProps &{
     title: string;
 }
 
