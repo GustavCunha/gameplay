@@ -1,7 +1,8 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 
-import ButtonIcon  from '../../components/ButtonIcon/ButtonIcon';
+import { Background } from '../../components/Background/Background';
+import { ButtonIcon }  from '../../components/ButtonIcon/ButtonIcon';
 
 import IllustrationImg from "../../assets/illustration.png";
 
@@ -22,25 +23,30 @@ export function SignIn() {
     }
 
     return (
-		<Container>
-			<IllustrationImage source={IllustrationImg} resizeMode="stretch" />
-
-			<Content>
-				<Title>
-					Conecte-se {"\n"}e organize suas {"\n"}
-					jogatinas
-				</Title>
-
-				<SubTitle>
-					Crie grupos para jogar seus games {"\n"}
-					favoritos com seus amigos
-				</SubTitle>
-
-				<ButtonIcon
-					title="Entrar com Discord"
-					onPress={handleSignIn}
+		<Background>
+			<Container>
+				<IllustrationImage
+					source={IllustrationImg}
+					resizeMode="stretch"
 				/>
-			</Content>
-		</Container>
+
+				<Content>
+					<Title>
+						Conecte-se {"\n"}e organize suas {"\n"}
+						jogatinas
+					</Title>
+
+					<SubTitle>
+						Crie grupos para jogar seus games {"\n"}
+						favoritos com seus amigos
+					</SubTitle>
+
+					<ButtonIcon
+						title="Entrar com Discord"
+						onPress={handleSignIn}
+					/>
+				</Content>
+			</Container>
+		</Background>
 	);
 }

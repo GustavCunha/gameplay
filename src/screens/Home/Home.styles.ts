@@ -1,16 +1,12 @@
 import styled from "styled-components/native";
 import { FlatList, Platform } from "react-native";
 
-export const HomeContainer = styled.View`
-	flex: 1;
-`;
-
 export const HomeHeader = styled.View`
 	width: 100%;
 	padding: 0 24px;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: ${Platform.OS === "ios" ? 40 + "px" : 10 + "%"};
+	margin-top: ${Platform.OS === "ios" ? 40 + "px" : 12 + "%"};
 	margin-bottom: 42px;
 `;
 

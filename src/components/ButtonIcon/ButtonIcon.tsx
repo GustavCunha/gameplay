@@ -13,7 +13,7 @@ type ButtonIconProps = RectButtonProps &{
     title: string;
 }
 
-export default function ButtonIcon({title, ...rest} : ButtonIconProps){
+export function ButtonIcon({title, ...rest} : ButtonIconProps){
     return(
         <ButtonStyled {...rest}>
             <IconWrapper>
