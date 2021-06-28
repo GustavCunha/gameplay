@@ -32,7 +32,8 @@ export const Select = styled.View`
 export const ImageView = styled.View`
     width: 64px;
     height: 68px;
-    background-color: ${theme.colors.secondary50};
+    background-color: ${theme.colors.secondary40};
+    border-color: ${theme.colors.secondary50};
     border-width: 1px;
     border-radius: 8px;
 `;

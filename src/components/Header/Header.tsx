@@ -42,11 +42,13 @@ export function Header({title, action}: Props) {
                 {title}
             </TitleHeader>
 
-            {action && (
+            {action ?
                 <View>
                     {action}
                 </View>
-            )}
+                :
+                <View style={{width: 24}}/>
+            }
 		</ContainerGradient>
 	);
 }

@@ -6,6 +6,7 @@ export function TextArea({...rest}: TextInputProps) {
     return (
         <TextInputStyled 
             {...rest}
+            style={{textAlignVertical: 'top'}}
         />
     )
 }

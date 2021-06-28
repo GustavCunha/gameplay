@@ -1,3 +1,4 @@
+import { LinearGradient } from "expo-linear-gradient";
 import { RectButton } from "react-native-gesture-handler";
 import styled from "styled-components/native";
 import { theme } from "../../global/styles/theme";
@@ -9,6 +10,15 @@ export const AppointmentContainer = styled.View`
     flex-direction: row;
     align-self: center;
 `;
+
+export const GuildIconContainer = styled(LinearGradient)`
+    height: 68px;
+    width: 64px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 20px;
+`; 
 
 export const AppointmentContent = styled.View`
     flex: 1;

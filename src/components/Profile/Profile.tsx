@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
+import { useAuth } from "../../hooks/auth";
 import { Avatar } from "../Avatar/Avatar";
 import { 
     Greeting, 
@@ -10,14 +11,16 @@ import {
 } from "./Profile.styles";
 
 export function Profile() {
+	const { user } = useAuth();
+
     return (
 		<ProfileContainer>
-			<Avatar url="https://avatars.githubusercontent.com/u/55558998?v=4" />
+			<Avatar url={user.avatar} />
 
 			<View>
 				<User>
 					<Greeting>Olá,</Greeting>
-					<UserName>Gustavo</UserName>
+					<UserName>{user.firstName}</UserName>
 				</User>
 				<Message>Hoje é dia de vitória</Message>
 			</View>

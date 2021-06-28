@@ -55,6 +55,7 @@ export function AppointmentCreate() {
 
     return (
 		<Container behavior={Platform.OS === "ios" ? "padding" : "height"}>
+			<Background>
 			<ScrollView>
 				<Header title="Agendar partida" />
 
@@ -135,6 +136,7 @@ export function AppointmentCreate() {
 					</Footer>
 				</Form>
 			</ScrollView>
+			</Background>
 
 			<ModalView visible={openGuildsModa} closeModal={handleCloseGuilds}>
 				<Guilds handleGuildSelect={handleGuildSelect} />

@@ -6,7 +6,6 @@ import { getBottomSpace } from "react-native-iphone-x-helper";
 export const BannerBackground = styled.ImageBackground`
     width: 100%;
     height: 234px;
-    margin-bottom: 30px;
 `;
 
 export const BannerContent = styled.View`
@@ -27,6 +26,7 @@ export const SubTitleBanner = styled.Text`
 	font-size: 13px;
 	font-family: ${theme.fonts.text400};
 	color: ${theme.colors.heading};
+    line-height: 21px;
 `;
 
 export const PlayersList = styled(FlatList)`

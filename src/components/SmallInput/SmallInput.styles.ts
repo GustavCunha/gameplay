@@ -11,4 +11,6 @@ export const TextInputStyled = styled.TextInput`
     font-size: 13px;
     margin-right: 4px;
     text-align: center;
+    border-color: ${theme.colors.secondary50};
+    border-width: 1px;
 `; 
